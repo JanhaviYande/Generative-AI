@@ -1,12 +1,7 @@
-# Write a program to print first n prime numbers
+def factors(num):
+    for i in range (1,num+1):
+       if num % i == 0:
+           print(i, end =" ")
 
-n = int(input("Enter value for n : "))
-
-for num in range (2,n+1):
-    isprime = True
-    for i in range (2,num):
-        if num%i == 0:
-            isprime = False
-            break
-    if isprime:
-        print(num)             
+num = int(input("Enter a number : "))
+factors(num)
