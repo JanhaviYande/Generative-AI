@@ -1,0 +1,6 @@
+# Python Program to Multiply All the Items in a Dictionary
+my_dict = {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+result = 1
+for value in my_dict.values():
+    result *= value
+print(result)
